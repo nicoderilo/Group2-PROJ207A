@@ -1,0 +1,30 @@
+{
+  "name": "threaded-phase1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "apps.js",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "export": "^0.1.337",
+    "exports": "^0.0.1",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoderilo/Group2-PROJ207A.git"
+  },
+  "author": "NICO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicoderilo/Group2-PROJ207A/issues"
+  },
+  "homepage": "https://github.com/nicoderilo/Group2-PROJ207A#readme"
+}
