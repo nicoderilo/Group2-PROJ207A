@@ -1,0 +1,509 @@
+/* STUDENT NAME : Nicolino Derilo*/
+/* DATE: JUNE 14, 2021*/
+/* CPRG210 Web Application*/
+/* ASSIGNMENT 3*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,li, dl, dt, dd, form, a, fieldset, input, th, td
+{
+    margin: 0; padding: 0; border: 0; outline: none;
+}
+
+
+.navbar-nav 
+{
+    text-align: right;
+    float:right;    
+    margin-left: 50%;    
+}
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+}
+
+.navbar
+{
+    /*background-image: linear-gradient(to right,#ff6600,#a14000);*/
+    background-image: linear-gradient(to right,#5ddfff,#00657e);
+    padding: 0 !important;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
+
+    
+}
+.img-fluid
+{
+    
+    width: 100%;
+    border-radius:1%;
+    
+}
+
+/*
+.img-fluid:hover{
+    border: 2px solid orange;
+    opacity: 0.9;
+}*/
+
+
+.navbar-brand img {
+    height: 50px;
+    padding-left: 20px;
+}
+
+.navbar-nav li
+{
+    padding: 10px;
+    float:right;
+    font-family: 'Noto Serif', serif;
+   
+
+}
+
+.navbar-nav li:hover
+{
+  
+    border-bottom: 4px solid rgb(255, 136, 39);
+
+}
+
+.navbar-nav li a  /*this css will align my link inside my toggle button*/
+{  
+    color: #fff!important;
+    font-weight:500px;
+    float: right;
+    text-align: left;
+    
+}
+.navbar-nav li a:hover 
+{  
+    color: #99a7a7!important;
+ 
+}
+
+
+.fa-bars 
+{
+    color: #fff;
+    font-size: 30px !important;
+    
+}
+
+.navbar-toggler 
+{
+    outline: none !important;
+}
+
+
+/*---------BANNER SECTION------------*/
+.carousel-item {
+    
+    height:360px;
+  }
+
+.carousel-caption h5, p {
+    color: rgb(255, 255, 255);
+    text-align: left;    
+}
+
+.carousel-caption h5 {
+    
+    font-size: 4em;    
+}
+#banner 
+{
+    /*background-image: linear-gradient(to right,#ff751a,#331400);*/
+    /*background-image: linear-gradient(to right,#9999ff,#000099);*/
+    background-image: linear-gradient(to right,#5ddfff,#00657e);
+    color: white;
+    /*padding-top: 5%;*/
+    
+    border: 1px solid red;
+}
+
+.promo-title:hover
+{
+   
+    font-family: 'Anton', sans-serif;
+    
+}
+.promo-title
+{
+    font-size:65px;
+    font-weight:600;
+    margin-top:100px;
+    font-family: 'Happy Monkey', cursive; 
+    text-align: center;
+}
+
+.bottom-img
+{
+    
+    width:100%;
+}
+
+
+/*--------------BOTTOM TEXT--------------------*/
+ #services
+ {
+    padding: 80px 0;
+    /*border: 2px solid;*/
+ }
+ .service-img
+ {
+    /*border: 2px solid;*/
+    width: 100px;
+    margin-top: 20px;
+ }
+ .services
+ {
+    padding: 20px;
+ }
+
+  .services h4
+ {
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+ }
+
+ .bottomtxt
+ {
+    color: orange;
+    font-size: 45px;
+ }
+
+
+#services .btn-primary /*can be package button or insurance */
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right,#5ddfff,#00657e);
+}
+/*------ABOUT US SECTION-- REGISTRATION FORM------*/
+
+#registerform
+{
+    background: #f8f9fa;
+    padding-bottom: 30px;
+    padding-top:30px;
+    height: 650px;
+}
+
+
+
+/*----------PACKAGES---------*/
+#packages
+{
+    margin: 100px 0;
+}
+
+table tr
+{
+    display: inline-block;
+    
+    /*float: middle;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+table 
+{
+ 
+     margin-left: auto;
+     margin-right: auto;
+}
+#cardesc
+{
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color:grey;
+}
+
+#packages  img
+{
+    /*height: 60px;
+    width: 60px;
+    border-radius: 50%;*/
+    margin: 0 10px;
+}
+
+#note
+{
+   text-align: center;
+   color: #e0e0e0;
+   text-decoration: none;
+   font-family: 'arial', sans-serif;
+}
+
+
+
+/*---------------Social Media Icons-------------------------*/
+
+#social-media
+{
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+
+#social-media p
+{
+   font-size: 30px;
+   font-weight: 600px;
+   margin-bottom: 30px;
+   color: orange;
+}
+
+
+.fa:hover 
+{
+    transition: 0.5s;
+    transform: translateY(-10px); /*floating effet in mg social icons transition will give smooth effect*/ 
+}
+
+
+.fa {
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  
+    background-image: linear-gradient(to right,#80b3ff,#0040a0);
+  color: white;
+}
+
+/*--------Footer Section----------*/
+#footer
+{
+    background-image: linear-gradient(to right,#5ddfff,#00657e);
+  color: white;
+}
+
+.footer-img
+{
+    width: 100%;
+}
+
+.footer-box
+{
+    padding: 20px
+}
+
+.footer-box img
+{
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer-box .fa
+{
+    font-size: 25px;
+    margin-right: 8px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right,#5ddfff,#00657e);
+}
+/*some of the style is to reset the settings of botstrap form-controls*/
+.footer-box .form-controls 
+{    
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+
+/*some of the style is to reset the settings of botstrap btn-primary*/
+.footer-box .btn-primary
+{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 20px;
+    background-image: linear-gradient(to right,#5ddfff,#00657e);
+}
+
+.copyright
+{
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/*-------CONTACTS.HTML----------*/
+
+ .agents-img
+ {
+    /*border: 2px solid;*/
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+ }
+  .agents-img:hover
+ {
+    /*border: 2px solid;*/
+   opacity: 0.5;
+ }
+ #travelprofessionals
+ {
+    margin-top:20px;
+    color: orange;
+    font-size: 35px;
+    font-family: 'Anton', sans-serif;
+
+ }
+ .agents .fa  /*icon*/
+ {
+   
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+   
+    text-decoration: none;
+    
+ }
+  .agents p  
+ {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;   
+    text-decoration: none;
+
+    color: #d15c02;
+ 
+    font-family: 'Anton', sans-serif;
+    
+ }
+ /*#agents .container*/
+ #Contacts 
+ {
+    /*border: 2px solid red;405px*/
+    height: 600px; 
+    border: 2px solid red;
+ }
+  .agents h4
+ {
+    color: orange;
+ }
+
+ /*-------------REGISTER.HTML-----------*/
+ p.tips 
+{
+	/*position: absolute; /*will put your text in one place
+	top: 50px;
+	left: 300px; 
+	background-color: aqua;
+	color: red;
+	height: 100px;
+	width: 200px;
+	visibility: hidden;
+	margin-left: 17%;
+	margin-top: 5%;
+	padding-top: 0px;
+	margin-top: 0px;*/
+	margin-left: 65%;
+	
+	font-size: 12px;
+	font-style: italic;
+	/*font-color: #e6e6e6;*/
+	visibility: hidden;
+	position: absolute;
+	
+}
+
+h1
+{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	font-family: 'Anton', sans-serif;
+	color: orange;
+}
+label
+{
+	text-align: left;				
+	margin-left: 15%;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	font-size: 18px;
+}
+
+#registerBody
+{
+	background: #f8f9fa;
+}
+.registerInput 
+{				
+	border-bottom: 3px solid grey;
+	background: #f8f9fa;
+	width: 70%;
+	margin-left: 15%;/*both side is 15% that makes it 30% + 70%*width of textbox that makes it a total off 100%*/
+}
+			
+input:hover
+{				
+	/*border-bottom: 3px solid orange;	*/			
+}
+
+.formbtn
+{
+	box-shadow: none !important;
+	border: none;
+	border-radius: 2;
+	margin-top: 10px;
+	margin-left: 20px;
+	background-image: linear-gradient(to right,#5ddfff,#00657e);
+	text-align:center;
+	
+}
+
+#message
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	color: red;
+	font-style: italic;
+	margin-left: 15%;
+
+}
+#submitbtn
+{
+	margin-left: 40%;
+}
+
