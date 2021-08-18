@@ -1,0 +1,206 @@
+<!--AUTHOR NAME : Vincent Payne-->
+<!--THREADED PROJECT PHASE 1-->
+<!--JUNE 2021-->
+<!--GROUP 2-->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <%- include('./partials/head.ejs')%>            <!--HEAD-->
+    
+    <body>
+    <%- include('./partials/nav.ejs')%>             <!--NAVBAR-->
+    <%- include('./partials/carousel.ejs')%>        <!--SLIDESHOW-->
+   
+    <!-------------DESTINATION CONTENT---------------->
+    <section id="destinations" class="destinations content">
+
+        <div class="container text-center">
+            <script>
+
+                //Fade animation script//
+        
+                function myAni(){
+                    document.getElementById("ani").style.opacity = "1";
+                }
+                function myAni2(){
+                    document.getElementById("ani2").style.opacity = "1";
+                }
+                function myAni3(){
+                    document.getElementById("ani3").style.opacity = "1";
+                }
+                function myAni4(){
+                    document.getElementById("ani4").style.opacity = "1";
+                }
+                function myAni5(){
+                    document.getElementById("ani5").style.opacity = "1";
+                }
+                function myAni6(){
+                    document.getElementById("ani6").style.opacity = "1";
+                }
+                function myAni7(){
+                    document.getElementById("ani7").style.opacity = "1";
+                }
+                function myAni8(){
+                    document.getElementById("ani8").style.opacity = "1";
+                }
+                     
+        
+                function myAniOff(){
+                    document.getElementById("ani").style.opacity = "0";
+                }
+                function myAniOff2(){
+                    document.getElementById("ani2").style.opacity = "0";
+                }
+                function myAniOff3(){
+                    document.getElementById("ani3").style.opacity = "0";
+                }
+                function myAniOff4(){
+                    document.getElementById("ani4").style.opacity = "0";
+                }
+                function myAniOff5(){
+                    document.getElementById("ani5").style.opacity = "0";
+                }
+                function myAniOff6(){
+                    document.getElementById("ani6").style.opacity = "0";
+                }
+                function myAniOff7(){
+                    document.getElementById("ani7").style.opacity = "0";
+                }
+                function myAniOff8(){
+                    document.getElementById("ani8").style.opacity = "0";
+                }
+                
+                function myRedirect(){                    
+                    window.location = "./vacations.html" //This is -> app.use(express.static('views'));  
+                }
+        
+            </script>
+        
+        
+        
+            
+        
+            <div class="row justify-content-center">
+                <div class="column col2 col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                    <div class="dtes" id="lftdte">
+                    <p id="artp">Experience a home away from home</p>
+                    <p id="sbpr">Did you know that 1.4 billion people travel every year? Well we want you to join them! We are dedicated to getting you out of the office and on to the beach! What's holding you back, check out some of our personal favourite destinations below.</p>    
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="column piccol col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                    <h1>Destinations</h1>
+                    <div class="cntpho">
+                        <p>Kenya</p>
+                        <img class="gms" onclick="myRedirect()" onmouseover="myAni()" onmouseout="myAniOff()" src="/kenya.jpg"/>
+                        <div class="dscbxs" id="ani" >
+                            <ul>
+                                <li>Safari excursions </li>
+                                <li>Over 60 languages spoken</li>
+                                <li>Traditional culture</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="cntpho">
+                        <p>New Zealand</p>
+                        <img class="gms" onclick="myRedirect()" onmouseover="myAni2()" onmouseout="myAniOff2()" src="/NZ.jpg"/>
+                        <div class="dscbxs" id="ani2" >
+                            <ul>
+                                <li>Large farming community</li>
+                                <li>Volcano tours</li>
+                                <li>Vast mountain ranges</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="cntpho">
+                        <p>Zanzibar</p>
+                        <img class="gms" onclick="myRedirect()" onmouseover="myAni3()" onmouseout="myAniOff3()" src="/zanzibarVINCE.jpg"/>
+                        <div class="dscbxs" id="ani3" >
+                            <ul>
+                                <li>Waterfront resorts</li>
+                                <li>Various traditional cuisines</li>
+                                <li>Shoppers paradise</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="cntpho">
+                        <p>Maldives</p>
+                        <img class="gms" onclick="myRedirect()" onmouseover="myAni4()" onmouseout="myAniOff4()" src="/newmaldives.jpg"/>
+                        <div class="dscbxs" id="ani4" >
+                            <ul>
+                                <li>Ocean front resorts</li>
+                                <li>Diverse wildlife</li>
+                                <li>Tons of aquatic activities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column piccol col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                    <h1>Activities</h1>
+                   
+                    <div class="cntpho">
+                        <p>Hang Gliding</p>
+                        <img class="gms" onclick="myRedirect()" onmouseover="myAni5()" onmouseout="myAniOff5()" src="/hang.jpg"/>
+                        <div class="dscbxs" id="ani5" >
+                            <ul>
+                                <li>Starting from 120$</li>
+                                <li>Free equipment rental for parties 3 or more</li>
+                                <li>See the world like never before</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="cntpho">
+                        <p>Rock Climbing</p>
+                        <img class="gms" onclick="myRedirect()" onmouseover="myAni6()" onmouseout="myAniOff6()" src="/climbing.jpg"/>
+                        <div class="dscbxs" id="ani6" >
+                            <ul>
+                                <li>Starting at 50$</li>
+                                <li>Equipment inlcuded</li>
+                                <li>36 different climbing areas</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="cntpho">
+                        <p>Scuba Diving</p>
+                        <img class="gms" onclick="myRedirect()" onmouseover="myAni7()" onmouseout="myAniOff7()" src="/scuba.jpg"/>
+                        <div class="dscbxs" id="ani7" >
+                            <ul>
+                                <li>Starting at 200$</li>
+                                <li>Lessons included</li>
+                                <li>Explore aquatic life and sunken ships</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="cntpho">
+                        <p>Zip Lining</p>
+                        <img class="gms" onclick="myRedirect()" onmouseover="myAni8()" onmouseout="myAniOff8()" src="/zip.jpg"/>
+                        <div class="dscbxs" id="ani8" >
+                            <ul>
+                                <li>Starting at 40$</li>
+                                <li>No lessons needed</li>
+                                <li>50 unique courses</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>        
+        </div>
+    </section>
+
+    <%- include('./partials/footer.ejs')%>        <!--FOOTER-->
+    </body>
+
+</html>

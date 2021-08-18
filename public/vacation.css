@@ -1,0 +1,166 @@
+/*
+*AUTHOR NAME : Vincent Payne and Imeromachi Obomagbaeghian
+*THREADED PROJECT PHASE 1
+*JUNE 2021
+*GROUP 2
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+    body#vacation{
+        background-image: linear-gradient(to right,#5ddfff,#00657e);
+    }
+    
+    .row{ 
+        background-color: transparent;
+        justify-content: center;
+         font-family: italics; 
+    } 
+
+    .column1{ 
+    
+        height: fit-content; 
+        border: none; 
+        display: flex; 	
+        justify-content: center; 
+        justify-content: space-evenly;
+        align-items: center; 
+        flex-direction: column; 
+        margin: 3%;
+        border-radius: 5px;     
+    } 
+
+    #links{ 
+        display: flex; 
+        flex-direction: row; 
+        background-color: black; 
+        justify-content: right; 
+        justify-content: space-evenly; 
+    }
+
+	a{
+	    color: black;
+	    text-decoration: none;
+	 }
+
+    .para{  
+        height: 800px; 
+        border: none; 
+        display: flex; 
+        font-size: medium; 
+        justify-self: flex-end; 
+    } 
+
+    .body{ 
+        background-color: black; 
+        display: flex; 
+        justify-content: center;
+    } 
+
+    h1#title{ 
+        text-align: center; 
+        padding-top: 40px;
+        font-family: 'Noto Serif', serif;
+    } 
+    h1#footmsg{
+        padding-top: 40px;
+        font-family: 'Noto Serif', serif;
+    }
+    #links
+    { 
+        display: flex; 
+        flex-direction: row; 
+        background-color: black; 
+        justify-content: right; 
+        justify-content: space-evenly; 
+    } 
+
+    #banner{ 
+        width: 100%; 
+        height: 400px; 
+        border:solid; 
+		margin-right: 15%;
+    } 
+
+    #bnnerpht{ 
+        width: 100%; 
+        height: 100%;   
+    } 
+
+    .photocnt{ 
+        width: 75%; 
+        height: fit-content; 
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #ffffff;
+        border: solid;
+        border-width: medium;
+        border-radius: 5px;
+        flex-direction: column;
+        margin: 3%;
+    } 
+
+    .photos{ 
+        width: 50%; 
+        height: 50%;
+        border: solid;
+        border-width: medium;
+        border-color: #000000;
+        border-radius: 5px; 
+        margin: 3%;
+        
+    } 
+    .fpara{        
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        background-color: transparent;
+        border-top: solid 2px rgb(255, 255, 255);
+        margin-top: 10px; 
+        padding-top: 10px;      
+        font-size: 1.5em;
+    }    
+    .aa{
+        display: flex;
+        font-size: x-large;
+        align-items: center;
+        background-color: rgb(30, 184, 211);
+        border: solid;
+        border-width: medium;
+        border-color: #000000;
+        border-radius: 5px;
+        flex-direction: column;
+        width: 50%;
+        height: fit-content;
+        margin: 3%;
+        color: #000000;
+    }
+    .bb{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3%;
+        color: #000000;
+        height: fit-content;
+        font-size: x-large;
+        border: solid;
+        border-width: medium;
+        border-color: #000000;
+        border-radius: 5px; 
+        background-color: rgb(30, 184, 211)
+    }
+    .cc{
+        margin-top: 10px;
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;      
+        height: fit-content;
+        font-size: x-large;
+        border-top: solid 2px white ;
+        font-size: 1.5em;
+        width: 90%;        
+    }
+  

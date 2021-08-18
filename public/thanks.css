@@ -1,0 +1,28 @@
+ /*
+*AUTHOR NAME : Vince Payne
+*THREADED PROJECT PHASE 1
+*JUNE 2021
+*GROUP 2
+*/
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+ h1#thanks
+ {
+     font-size: xxx-large;
+     color: rgb(78, 78, 78);
+     font-family: 'Noto Serif', serif;
+     text-align: center;
+ }
+p#thanks{
+    font-size: 1.5em;
+    color: rgb(138, 138, 138);
+    text-align: center;
+    font-family: 'Noto Serif', serif;    
+}
+
+ #thanksContainer{
+     height: 500px;
+     background-image: linear-gradient(to right,#ffffff,#dff0ff);
+     font-family: 'Noto Serif', serif;
+     padding-top: 10%;
+ }

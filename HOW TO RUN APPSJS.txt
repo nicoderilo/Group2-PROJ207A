@@ -1,0 +1,24 @@
+HOW TO RUN APP.js
+
+1.Before running the app.js, add first the "flights" table into the database.
+	2 WAYS OF ADDING FLIGHTS TABLE
+	Run script travelexperts.sql in my phpadmin.
+		OR
+	Import flight.csv file and add table column names manually. (see flight table.png for reference) 
+
+	table column names
+	1. flightNumber
+	2. airline
+	3. departureAirport
+	4. arrivalAirport
+	5. departureTime
+	6. arrivalTime
+	7. basePrice
+	8. agencyCommision
+
+2. nodemon apps.js
+
+
+NOTE: Public folder - contains images,css
+      Views folder - html and ejs files
+      Partials folder - ejs files(head.ejs,navbar.ejs,carousel.ejs,footer.ejs)

@@ -1,0 +1,135 @@
+<!--AUTHOR NAME : Kathy Deng-->
+<!--THREADED PROJECT PHASE 1-->
+<!--JUNE 2021-->
+<!--GROUP 2-->
+
+<head>
+
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs')%>        <!--HEAD-->
+<body>
+    <%- include('./partials/nav.ejs')%>         <!--NAVBAR-->
+    <%- include('./partials/carousel.ejs')%>    <!--SLIDESHOW-->
+    
+    <main>
+        <form class="forms" action="./flight-search" method="POST">
+            <div class="column radio">
+                <input type="radio" id="roundTrip" name="ways" value="roundTrip" checked="checked">
+                <label for="roundTrip">Roundtrip</label>
+                <input type="radio" id="oneWay" name="ways" value="oneWay">
+                <label for="oneWay">Oneway</label>
+            </div>
+            <div class="column radio">
+                <input type="radio" id="economy" name="ticketClass" value="economy" checked="checked">
+                <label for="economy">Economy</label>
+                <input type="radio" id="business" name="ticketClass" value="business">
+                <label for="business">Business</label>
+            </div>
+            <div class="column form">
+                <label for="departureAirport">From:</label>
+                <input list="airports" type="text" name="departureAirport" required="required" />
+            </div>
+            <div class="column form">
+                <label for="arrivalAirport">To:</label>
+                <input list="airports" type="text" id="departureAirport" name="arrivalAirport"
+                    required="required" />
+            </div>
+            <div class="column form">
+                <label for="departureDate">Depart:</label>
+                <input type="date" id="departureDate" name="departureDate" required="required" />
+            </div>
+            <div class="column form" id="returned">
+                <label for="returnDate">Return:</label>
+                <input type="date" id="returnDate" name="returnDate" />
+            </div>
+
+            <div class="column form">
+                <label for="adults">Adults:</label>
+                <input type="number" id="adults" name="adults" min="0" max="9" value="1">
+            </div>
+            <div class="column form">
+                <label for="children">Children:</label>
+                <input type="number" id="children" name="children" min="0" max="9" value="0">
+            </div>
+            <div class="column form">
+                <label for="infants">Infants:</label>
+                <input type="number" id="infants" name="infants" min="0" max="3" value="0">
+            </div>
+
+            <div class="column button">
+                <button type="submit">Submit</button>
+                <button type="reset" id="reset">Reset</button>
+            </div>
+
+            <datalist id="airports">
+                <option value="Calgary, Canada"></option>
+                <option value="Athens, Greece"></option>
+                <option value="Cairo, Egypt"></option>
+                <option value="Calcutta, India"></option>
+                <option value="Chicago, US"></option>
+                <option value="Edmonton, Canada"></option>
+                <option value="Hong Kong, China"></option>
+                <option value="London, England"></option>
+                <option value="Montreal, Canada"></option>
+                <option value="New York, US"></option>
+                <option value="Niagara, Canada"></option>
+                <option value="Paris, France"></option>
+                <option value="Sydney, Australia"></option>
+                <option value="Toronto, Canada"></option>
+                <option value="Victoria, Canada"></option>
+                <option value="Vancouver, Canada"></option>
+                <option value="Winnipeg, Canada"></option>
+            </datalist>
+        </form>
+        <div class="pageLinks" id="pageLinks">
+
+        </div>
+    </main>
+    <script>
+        const returned = document.getElementById("returned");
+        const oneWay = document.getElementById("oneWay");
+        const roundTrip = document.getElementById("roundTrip");
+        oneWay.addEventListener('click', () => {
+            returned.classList.add('hidden');
+        })
+        roundTrip.addEventListener('click', () => {
+            returned.classList.remove('hidden');
+        })
+    </script>
+    <script>
+        var imgsrc = Array();
+        var imgurl = Array();
+        var imgTitle=Array();
+        for (i = 0; i < 6; i++) {           
+            imgsrc[i] = "./" + i + ".jpg"
+        };
+        //We used temporary link for presentation only
+        imgurl = ["#", "#", "#", "#", "#", "#"];
+
+        imgTitle = ["50% to Toronto", "60% to Sydney", "60% to Paris", "70% to London", "80% to Hong Kong", "80% to Chicago"];
+
+        for (i = 0; i < 6; i++) {
+            var linkNode=document.createElement('a');
+            linkNode.setAttribute("id", "img"+i);
+            linkNode.setAttribute("class", "pageLink");
+            linkNode.setAttribute("href", imgurl[i]);
+            
+            var imgNode = document.createElement('img');
+            imgNode.setAttribute("src",imgsrc[i]);
+            imgNode.setAttribute("alt","image");
+            
+            var spanNode=document.createElement('span');
+            spanNode.setAttribute("class", "linkName");
+            spanNode.innerHTML=imgTitle[i];
+
+            document.getElementById("pageLinks").appendChild(linkNode);
+            document.getElementById("img"+i).appendChild(imgNode);
+            document.getElementById("img"+i).appendChild(spanNode);
+        };
+    </script>
+
+        <%- include('./partials/footer.ejs')%>   <!--FOOTER-->
+</body>
+
+</html>

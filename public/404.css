@@ -1,0 +1,27 @@
+/*
+*AUTHOR NAME : Nico Derilo
+*THREADED PROJECT PHASE 1
+*JUNE 2021
+*GROUP 2
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+body#error, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,li, dl, dt, dd, form, a, fieldset, input, th, td
+{
+    margin: 0; padding: 0; border: 0; outline: none;
+}
+body#error{
+    background-image: linear-gradient(to right,#ffffff,#dff0ff);
+}
+h2#error {
+    color: rgb(255, 97, 97);  
+    padding-top: 180px;              
+}
+p#error {
+    color: rgb(117, 117, 117);                
+}
+section#error {
+    height: 400px;         
+    font-family: 'Noto Serif', serif;                
+}

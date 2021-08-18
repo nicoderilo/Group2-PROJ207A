@@ -1,0 +1,66 @@
+<!--AUTHOR NAME : Nico Derilo-->
+<!--THREADED PROJECT PHASE 1-->
+<!--JUNE 2021-->
+<!--GROUP 2-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">   
+        <%- include('./partials/head.ejs')%>        <!--HEAD-->        
+    <body>
+        <%- include('./partials/nav.ejs')%>         <!--NAVBAR-->
+        <%- include('./partials/carousel.ejs')%>    <!--SLIDESHOW-->  
+
+        <!------------SERVICES------------>
+        <section id="services">                    
+            <div class="row" >                
+                <div class="container text-center">
+                    <p class="sectionTitle">OUR SERVICES</p>
+                    <div class="row text-center">                
+                        <div class="col-md-4 services">
+                            <img src="airtickets.png" class="service-img">
+                            <h4>Air Tickets</h4>
+                            <p>At our travel agency, you can book air tickets to any world destination. We also provide online ticket booking via our website in just a couple of steps.</p>
+                        </div>
+                        <div class="col-md-4 services">
+                            <img src="hotel.png" class="service-img">
+                            <h4>Hotel Bookings</h4>
+                            <p>We offer a wide selection of hotel ranging from 5-star ones to small properties located worldwide so that you could book a hotel you like.</p>
+                        </div>
+                        <div class="col-md-4 services">
+                            <img src="summer.png" class="service-img">
+                            <h4>Tailored Summer Tours</h4>
+                            <p>Our agency provides varied tours including tailored summer tours for clients who are searching for an exclusive and memorable vacation.</p>
+                        </div>
+
+                    </div>                 
+                </div>            
+            </div>        
+        </section>
+
+        <!------------TESTIMONIALS------------>        
+        <section class="home content">
+            <div class="container text-center">           
+                <div class="container">
+                  <p class="sectionTitle text-center">TESTIMONIALS</p>
+                  <div class="row offset-2"> 
+                      <div class="col-md-5 testimonials">
+                        <img src="/testimonials1.png">
+                          <p>I had a marvelous time in our travels to Madagascar, Zimbabwe and Botswana, I had just wonderful experiences.I loved the location of the Gorges Camp as I felt like it was only the time we got to see real and rural Africans and how they truly lived. The service was amazing and everyone was very attentive!</p>                      
+                          <p class="user-details"><b>Michael J</b><br /> co-founder at SShaw</p>                
+                      </div>  
+
+                      <div class="col-md-5 testimonials"> 
+                         <img src="/testimonials2.png">                   
+                          <p>Just wanted to say many, many thanks for helping me set up an amazing Costa Rican adventure! My nephew and I had a blast! All of the accommodations were perfect as were the activities that we did (canopy, coffee tour, hikes, fishing, and massages!) We have such fond memories and can't thank you enough!</p>                      
+                          <p class="user-details"><b>Chelsea</b><br /> co-founder at Teluss</p>                
+                      </div>
+                  </div>
+              </div>         
+            </div>
+        </section>
+    
+        <%- include('./partials/footer.ejs')%>   <!----FOOTER------>   
+
+    </body>
+</html>
+

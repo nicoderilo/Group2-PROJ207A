@@ -1,0 +1,277 @@
+/*
+*AUTHOR NAME : Nicolino Derilo
+*THREADED PROJECT PHASE 1
+*JUNE 2021
+*GROUP 2
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,li, dl, dt, dd, form, a, fieldset, input, th, td
+{
+    margin: 0; padding: 0; border: 0; outline: none;
+}
+
+/* -----------NAVBAR SECTION-----------------*/
+.navbar-nav 
+{
+    text-align: right;
+    float:right;    
+    margin-left: 60%;    
+}
+
+#nav-bar 
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;    
+}
+
+.navbar
+{   
+    background-image: linear-gradient(to right,#5ddfff,#00657e);
+    padding: 0 !important;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);    
+}
+.img-fluid
+{    
+    width: 100%;
+    border-radius:1%;    
+}
+
+.navbar-brand img 
+{
+    height: 50px;
+    padding-left: 20px;
+}
+
+.navbar-nav li
+{
+    padding: 10px;
+    float:right;
+    font-family: 'Noto Serif', serif;
+}
+
+.navbar-nav li:hover
+{  
+    border-bottom: 4px solid rgb(255, 136, 39);
+}
+
+.navbar-nav li a  
+{  
+    color: #fff!important;
+    font-weight:500px;
+    float: right;
+    text-align: left;    
+}
+.navbar-nav li a:hover 
+{  
+    color: #99a7a7!important;
+ 
+}
+
+.navbar-toggler 
+{
+    outline: none !important;
+}
+
+
+/*---------SLIDESHOW SECTION------------*/
+.carousel-item 
+{    
+    height:360px;    
+}
+
+.carousel-caption h5, p 
+{
+    color: rgb(255, 255, 255);      
+}
+
+.carousel-caption h5 
+{    
+    font-size: 2em;    
+}
+
+
+
+
+
+/*--------------SERVICES SECTION START-------------------*/
+#services 
+{    
+    background-image: linear-gradient(to right,#5ddfff,#00657e);
+    
+}
+p.sectionTitle
+{
+   margin-top: 30px;
+   color: rgb(70, 70, 70);
+   font-size: 35px;
+   font-family: 'Noto Serif', serif;
+}
+ .service-img
+ {
+    /*border: 2px solid;*/
+    width: 60px;
+    margin-top: 10px;
+ }
+ .services
+ {
+    padding: 20px;
+ }
+
+  .services h4
+ {
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    
+ }
+
+
+
+
+/*----------TESTIMONIALS---------*/
+
+
+.testimonials /*-----Orange Padding-----*/
+{
+    border-left: 4px solid orange;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+       
+}
+
+
+.testimonials  img
+{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+   
+}
+
+.testimonials p
+{
+    color: rgb(61, 61, 61);
+    text-align: justify;
+   
+}
+
+p.user-details
+{
+    display: inline-block; 
+    font-size: 12px;
+    text-align: center;
+    
+    
+}
+
+/*------------------FOOTER SECTION---------------*/
+#footer
+{
+    background-image: linear-gradient(to right,#5ddfff,#00657e);
+  color: white;
+}
+
+.footer-img
+{
+    width: 100%;
+}
+
+.footer-box
+{
+    padding: 20px
+}
+
+.footer-box img
+{
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer-box .fa
+{
+    font-size: 25px;
+    margin-right: 8px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right,#5ddfff,#00657e);
+}
+
+.footer-box .form-controls 
+{    
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+
+
+.footer-box .btn-primary
+{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 20px;
+    background-image: linear-gradient(to right,#5ddfff,#00657e);
+}
+
+.copyright
+{
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.fa:hover 
+{
+    transition: 0.5s;
+    transform: translateY(-10px); 
+}
+
+.fa 
+{
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+
+.fa:hover 
+{
+    opacity: 0.7;
+}
+			
+
+
+.formbtn
+{
+	box-shadow: none !important;
+	border: none;
+	border-radius: 2;
+	margin-top: 10px;
+	margin-left: 20px;
+	background-image: linear-gradient(to right,#5ddfff,#00657e);
+	text-align:center;
+	
+}
+.bottom-img
+{    
+    width:100%;
+}
+
+#abouttravel {
+    font-size: .8em;
+}
+
+

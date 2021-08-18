@@ -8,9 +8,12 @@
     "export": "^0.1.337",
     "exports": "^0.0.1",
     "express": "^4.17.1",
+    "express-generator": "^4.16.1",
     "lodash": "^4.17.21",
+    "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.7",
+    "path": "^0.12.7",
     "pug": "^3.0.2"
   },
   "devDependencies": {},
